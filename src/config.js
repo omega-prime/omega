@@ -1,4 +1,4 @@
-/*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+/*jshint esnext: true */
 
 export default {
   googleAnalyticsId: 'UA-XXXXX-X',

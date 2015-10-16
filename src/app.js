@@ -1,4 +1,4 @@
-/*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+/*jshint esnext: true */
 
 import 'babel-core/polyfill';
 import ReactDOM from 'react-dom';
@@ -6,9 +6,13 @@ import FastClick from 'fastclick';
 import Router from './routes';
 import Location from './core/Location';
 import { addEventListener, removeEventListener } from './utils/DOMUtils';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 
 let cssContainer = document.getElementById('css');
 const appContainer = document.getElementById('app');
+injectTapEventPlugin();
+
 const context = {
   onSetTitle: value => document.title = value,
   onSetMeta: (name, content) => {

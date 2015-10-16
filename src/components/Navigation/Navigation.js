@@ -1,10 +1,12 @@
-/*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+/*jshint esnext: true */
 
 import React, { PropTypes, Component } from 'react';
 import classNames from 'classnames';
 import styles from './Navigation.css';
 import withStyles from '../../decorators/withStyles';
 import Link from '../Link';
+import RaisedButton from 'material-ui/lib/raised-button';
+
 
 @withStyles(styles)
 class Navigation extends Component {
@@ -16,6 +18,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className={classNames(this.props.className, 'Navigation')} role="navigation">
+        <RaisedButton label="Sol Tran" />
         <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
         <a className="Navigation-link" href="/contact" onClick={Link.handleClick}>Contact</a>
         <span className="Navigation-spacer"> | </span>
