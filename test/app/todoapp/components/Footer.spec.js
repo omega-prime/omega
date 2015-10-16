@@ -46,13 +46,13 @@ describe('todoapp Footer component', () => {
   it('should display active count when 0', () => {
     const { output } = setup({ activeCount: 0 });
     const [count] = output.props.children;
-    expect(getTextContent(count)).to.equal('No items left');
+    expect(getTextContent(count)).to.equal('No tasks left');
   });
 
   it('should display active count when above 0', () => {
     const { output } = setup({ activeCount: 1 });
     const [count] = output.props.children;
-    expect(getTextContent(count)).to.equal('1 item left');
+    expect(getTextContent(count)).to.equal('1 task left');
   });
 
   it('should render filters', () => {

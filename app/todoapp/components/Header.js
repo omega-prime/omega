@@ -16,10 +16,6 @@ class Header extends Component {
               <option>Confirmation</option>
               <option>Dispatch</option>
           </select>
-
-          <TodoTextInput newTodo
-                         onSave={this.handleSave.bind(this)}
-                         placeholder='What needs to be done?' />
       </header>
     );
   }
