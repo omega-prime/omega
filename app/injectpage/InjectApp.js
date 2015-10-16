@@ -17,7 +17,7 @@ export default class InjectApp extends Component {
     return (
       <div style={{
         textAlign: 'center',
-        width: 500,
+        width: 800,
         fontSize: 25
       }}>
         <p>This is Inject React Example</p>

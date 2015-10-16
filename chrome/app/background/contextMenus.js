@@ -13,7 +13,7 @@ function popWindow(type) {
   let options = {
     type: 'popup',
     left: 100, top: 100,
-    width: 800, height: 475
+    width: 1200, height: 875
   };
   if (type === 'open') {
     options.url = 'window.html';

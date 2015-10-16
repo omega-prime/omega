@@ -1,16 +1,61 @@
 import * as ActionTypes from '../constants/ActionTypes';
 
 let initialState = [{
-  text: 'Use Redux',
+  text: 'Use Redux Man',
   completed: false,
+  type: 'exception',
+  date: '',
+  priority: '',
   id: 0
+},
+{
+  text: 'Cool Man',
+  completed: false,
+  type: 'confirmed',
+  date: '',
+  priority: '',
+  id: 1
+},{
+  text: 'Sweet Bro',
+  completed: false,
+  type: '',
+  date: '',
+  priority: '',
+  id: 2
+},{
+  text: 'Use Redux Man',
+  completed: false,
+  type: '',
+  date: '',
+  priority: '',
+  id: 3
+},{
+  text: 'Use Redux Man',
+  completed: false,
+  type: '',
+  date: '',
+  priority: '',
+  id: 4
+},{
+  text: 'Use Redux Man',
+  completed: false,
+  type: '',
+  date: '',
+  priority: '',
+  id: 5
+},{
+  text: 'Use Redux Man',
+  completed: false,
+  type: '',
+  date: '',
+  priority: '',
+  id: 6
 }];
 
 const actionsMap = {
   [ActionTypes.ADD_TODO]: (state, action) => {
     return [{
       id: state.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1,
-      completed: false,
       text: action.text
     }, ...state];
   },

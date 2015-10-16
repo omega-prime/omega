@@ -1,12 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 import TodoItem from './TodoItem';
 import Footer from './Footer';
-import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters';
+import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE, SHOW_EXCEPTION, SHOW_CONFIRMED, SHOW_DISPATCHED } from '../constants/TodoFilters';
 
 const TODO_FILTERS = {
   [SHOW_ALL]: () => true,
   [SHOW_ACTIVE]: todo => !todo.completed,
-  [SHOW_COMPLETED]: todo => todo.completed
+  [SHOW_COMPLETED]: todo => todo.completed,
+  [SHOW_CONFIRMED]: todo => todo.type === todo.confirmed,
+  [SHOW_EXCEPTION]: todo => todo.type === todo.exception,
+  [SHOW_DISPATCHED]: todo => todo.type === todo.dispatched
 };
 
 class MainSection extends Component {
@@ -54,6 +57,7 @@ class MainSection extends Component {
     const { filter } = this.state;
 
     const filteredTodos = todos.filter(TODO_FILTERS[filter]);
+    console.log(filteredTodos);
     const completedCount = todos.reduce((count, todo) =>
       todo.completed ? count + 1 : count,
       0
