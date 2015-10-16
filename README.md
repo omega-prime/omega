@@ -1,9 +1,7 @@
-# React Chrome Extension Boilerplate
+# Shiphawk HawkVision by Emilia, Sol, Alex, Mark
 
-[![Build Status](https://travis-ci.org/jhen0409/react-chrome-extension-boilerplate.svg)](https://travis-ci.org/jhen0409/react-chrome-extension-boilerplate)
-[![NPM version](http://img.shields.io/npm/v/react-chrome-extension-boilerplate.svg?style=flat)](https://www.npmjs.com/package/react-chrome-extension-boilerplate)
 
-Boilerplate for Chrome extension React.js project.
+ShipHawk HawkVision 
 
 ## Included
 
@@ -23,10 +21,6 @@ Boilerplate for Chrome extension React.js project.
  - [classnames](https://github.com/JedWatson/classnames)
  - [todomvc-app-css](https://github.com/tastejs/todomvc-app-css)
  - ...
-
-## Example
-
-The example is edited from [Redux](https://github.com/rackt/redux) TodoMVC example.
 
 #### Popup
 
@@ -84,7 +78,7 @@ npm run dev
 
 #### React/Flux hot reload
 
-This boilerplate uses `Webpack` and `react-transform`, and use `Redux`. You can hot reload by editing related files of Popup & Window.
+This chrome extension uses `Webpack` and `react-transform`, and use `Redux`. You can hot reload by editing related files of Popup & Window.
 
 ## Build
 
