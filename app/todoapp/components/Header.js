@@ -9,8 +9,14 @@ class Header extends Component {
 
   render() {
     return (
-      <header className='header'>
-          <h1>tHello</h1>
+
+      <header className='header-selection'>
+          <select>
+              <option>All Tasks</option>
+              <option>Exception</option>
+              <option>Confirmation</option>
+              <option>Dispatch</option>
+          </select>
           <TodoTextInput newTodo
                          onSave={this.handleSave.bind(this)}
                          placeholder='What needs to be done?' />

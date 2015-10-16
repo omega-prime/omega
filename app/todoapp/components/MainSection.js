@@ -28,7 +28,8 @@ class MainSection extends Component {
     const { todos, actions } = this.props;
     if (todos.length > 0) {
       return (
-        <input className='toggle-all'
+        <input style={{display: 'none'}}
+               className='toggle-all'
                type='checkbox'
                checked={completedCount === todos.length}
                onChange={actions.completeAll} />

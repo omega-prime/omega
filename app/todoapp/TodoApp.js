@@ -20,7 +20,7 @@ export default class TodoApp extends Component {
     const actions = bindActionCreators(TodoActions, dispatch);
 
     return (
-      <div>
+      <div style={{minHeight: '1000px'}}>
         <Header addTodo={actions.addTodo} />
         <MainSection todos={todos} actions={actions} />
       </div>
