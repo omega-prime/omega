@@ -5,10 +5,10 @@ import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE, SHOW_EXCEPTION, SHOW_DISPATCHED,
 const FILTER_TITLES = {
   [SHOW_ALL]: 'All',
   [SHOW_ACTIVE]: 'Active',
-  [SHOW_COMPLETED]: 'Completed',
+  [SHOW_COMPLETED]: 'Done',
   [SHOW_EXCEPTION]: 'Exception',
-  [SHOW_DISPATCHED]: 'Dispatched',
-  [SHOW_CONFIRMED]: 'Confirmed'
+  [SHOW_DISPATCHED]: 'Dispatch',
+  [SHOW_CONFIRMED]: 'Confirm'
 };
 
 class Footer extends Component {

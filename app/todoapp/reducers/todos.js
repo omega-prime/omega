@@ -51,7 +51,7 @@ let initialState = [{
     },
     {
     shipmentId: "SH10111503",
-    type: "exception",
+    type: "confirm",
     message: "Confirm Delivery",
     age: "17 Hours",
     completed: false    

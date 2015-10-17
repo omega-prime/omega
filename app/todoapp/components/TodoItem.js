@@ -21,7 +21,19 @@ class TodoItem extends Component {
   render() {
     const {todo, completeTodo, deleteTodo} = this.props;
 
+    let style = {
+      itemStyle: {
+        fontSize: '14px',
+        
+      },
+      typeColor: {
+          color: todo.type == 'exception' ? 'red' : (todo.type == 'confirm' ? 'orange' : 'yellow'),
+          marginLeft: '10px'
+      }
+    }
+
     let element;
+
     if (this.state.editing) {
       element = (
         <TodoTextInput text={todo.text}
@@ -35,9 +47,13 @@ class TodoItem extends Component {
                  type='checkbox'
                  checked={todo.completed}
                  onChange={() => completeTodo(todo.id)} />
-          <label onDoubleClick={this.handleDoubleClick.bind(this)}>
-            {todo.text}
+          <label onDoubleClick={this.handleDoubleClick.bind(this)} style={style.itemStyle}>
+            {todo.message}
+            <span style={style.typeColor}>
+              {todo.type}
+          </span>
           </label>
+    
         </div>
       );
     }
