@@ -1,91 +1,91 @@
 import * as ActionTypes from '../constants/ActionTypes';
 
 let initialState = [{
-    shipmentId: "SH10111503",
+    shipmentId: "1061607",
     type: "exception",
     message: "Shipment lost in transit",
     age: "4 Days",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062677",
     type: "exception",
     message: "Shipment lost in transit",
     age: "36 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062634",
     type: "exception",
     message: "Shipment lost in transit",
     age: "7 Hours",
     completed: false   
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1059105",
     type: "exception",
     message: "Shipment lost in transit",
     age: "7 Hours",
     completed: false   
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1059246",
     type: "exception",
     message: "Shipment lost in transit",
     age: "7 Hours",
     completed: false   
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062371",
     type: "confirm",
     message: "Confirm Pickup",
     age: "36 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062381",
     type: "confirm",
     message: "Confirm Pickup",
     age: "4 Days",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062390",
     type: "confirm",
     message: "Confirm Delivery",
     age: "17 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062417",
     type: "confirm",
     message: "Confirm Delivery",
     age: "14 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062315",
     type: "confirm",
     message: "Confirm Pickup",
     age: "12 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062687",
     type: "dispatch",
     message: "Waiting for Dispatch",
     age: "18 Hours",
     completed: false    
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062689",
     type: "dispatch",
     message: "Waiting for Dispatch",
     age: "7 Hours",
     completed: false   
     },
     {
-    shipmentId: "SH10111503",
+    shipmentId: "1062696",
     type: "dispatch",
     message: "Waiting for Dispatch",
     age: "7 Hours",

@@ -18,6 +18,7 @@ class TodoItem extends Component {
     };
   }
 
+
   render() {
     const {todo, completeTodo, deleteTodo} = this.props;
 
@@ -27,7 +28,11 @@ class TodoItem extends Component {
         
       },
       typeColor: {
-          color: todo.type == 'exception' ? 'red' : (todo.type == 'confirm' ? 'orange' : 'yellow'),
+          color: todo.type == 'exception' ? 'red' : (todo.type == 'confirm' ? 'orange' : 'blue'),
+          marginLeft: '10px'
+      },
+      age: {
+          color: 'green',
           marginLeft: '10px'
       }
     }
@@ -51,7 +56,16 @@ class TodoItem extends Component {
             {todo.message}
             <span style={style.typeColor}>
               {todo.type}
-          </span>
+            </span>
+            <span style={style.age}>
+              {todo.age} old
+            </span>
+
+          </label>
+          <label>
+          <a href='' onClick={() => chrome.tabs.create({url: 'https://shiphawk.com/connect/shipments/' + todo.shipmentId})}>
+            SH{todo.shipmentId}
+          </a>
           </label>
     
         </div>
