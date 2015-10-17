@@ -1,56 +1,98 @@
 import * as ActionTypes from '../constants/ActionTypes';
 
 let initialState = [{
-  text: 'Use Redux Man',
-  completed: false,
-  type: 'exception',
-  date: '',
-  priority: '',
-  id: 0
-},
-{
-  text: 'Cool Man',
-  completed: false,
-  type: 'confirmed',
-  date: '',
-  priority: '',
-  id: 1
-},{
-  text: 'Sweet Bro',
-  completed: false,
-  type: '',
-  date: '',
-  priority: '',
-  id: 2
-},{
-  text: 'Use Redux Man',
-  completed: false,
-  type: '',
-  date: '',
-  priority: '',
-  id: 3
-},{
-  text: 'Use Redux Man',
-  completed: false,
-  type: '',
-  date: '',
-  priority: '',
-  id: 4
-},{
-  text: 'Use Redux Man',
-  completed: false,
-  type: '',
-  date: '',
-  priority: '',
-  id: 5
-},{
-  text: 'Use Redux Man',
-  completed: false,
-  type: '',
-  date: '',
-  priority: '',
-  id: 6
-}];
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Shipment lost in transit",
+    age: "4 Days",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Shipment lost in transit",
+    age: "36 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Shipment lost in transit",
+    age: "7 Hours",
+    completed: false   
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Shipment lost in transit",
+    age: "7 Hours",
+    completed: false   
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Shipment lost in transit",
+    age: "7 Hours",
+    completed: false   
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "confirm",
+    message: "Confirm Pickup",
+    age: "36 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "confirm",
+    message: "Confirm Pickup",
+    age: "4 Days",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "exception",
+    message: "Confirm Delivery",
+    age: "17 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "confirm",
+    message: "Confirm Delivery",
+    age: "14 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "confirm",
+    message: "Confirm Pickup",
+    age: "12 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "dispatch",
+    message: "Waiting for Dispatch",
+    age: "18 Hours",
+    completed: false    
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "dispatch",
+    message: "Waiting for Dispatch",
+    age: "7 Hours",
+    completed: false   
+    },
+    {
+    shipmentId: "SH10111503",
+    type: "dispatch",
+    message: "Waiting for Dispatch",
+    age: "7 Hours",
+    completed: false   
+    },
+
+    ];
 
 const actionsMap = {
   [ActionTypes.ADD_TODO]: (state, action) => {
